@@ -1,0 +1,43 @@
+imap:
+  host: imap.metropolia.fi
+  port: 993
+  username: "USERNAME@metropolia.fi"
+  fetch_limit: 30                      # emails per poll
+  lookback_days: 7                     # how far back on first run
+
+ai:
+  model: "qwen2.5:14b-instruct"        # local Ollama model
+  notification_threshold: 0.75        # min confidence to fire a notification since let's face it, AI is smart but dumb as hell at the same time
+
+profile:
+  situation: >
+    I am a software engineering student at Metropolia who already has a
+    full-time job as a software engineer. I do not need job opportunities,
+    career fairs, recruitment events, or internship offers of any kind.
+  care_about:
+    - Exam dates and results
+    - Assignment deadlines
+    - Course registration and timetable changes
+    - Graduation and thesis requirements
+    - Tuition and student admin
+    - IT or account access issues
+    - Anything addressed to me personally
+    - Mandatory attendance events
+  ignore:
+    - Job fairs and career events
+    - Internship and graduate scheme offers
+    - Employer recruitment emails
+    - Generic campus social events
+    - Student club promotional emails
+    - Newsletters requiring no action
+    - Any "opportunity" framing
+
+schedule:
+  poll_interval_minutes: 15
+  digest_day: "monday"
+  digest_time: "08:00"
+
+notifications:
+  timeout_ms: 8000       # 0 = persistent until dismissed
+  urgency_normal: "normal"
+  urgency_critical: "critical"
