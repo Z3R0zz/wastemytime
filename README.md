@@ -75,23 +75,42 @@ export WASTEMYTIME_PASSWORD="your_password"
 python main.py
 ```
 
+### 6. install the cli wrapper (optional)
+
+lets you run `wastemytime` from anywhere instead of activating the venv and cd-ing into the project
+
+```bash
+ln -sf $(pwd)/wastemytime ~/.local/bin/wastemytime
+```
+
+make sure `~/.local/bin` is in your PATH (it probably already is)
+
 ## usage
 
 ```
-python main.py                   # check inbox now
-python main.py --daemon          # poll every 15min, weekly digest on mondays
-python main.py --digest          # generate weekly digest
-python main.py --deadlines       # print upcoming deadlines which you will miss anyway
-python main.py --dismiss 42      # dismiss a tracked item
-python main.py --status          # show stats
-python main.py --set-password    # store/update IMAP password
+wastemytime                      # check inbox now
+wastemytime --daemon             # poll every 15min, weekly digest on mondays
+wastemytime --digest             # generate weekly digest
+wastemytime --deadlines          # print upcoming deadlines which you will miss anyway
+wastemytime --dismiss 42         # dismiss a tracked item
+wastemytime --status             # show stats
+wastemytime --set-password       # store/update IMAP password
 ```
+
+or if you didn't do step 6, `python main.py` from the project dir with the venv active works the same
 
 ## run as a systemd service
 
-```bash
-vim wastemytime.service
+the systemd service can't access your desktop session's keyring so it needs the password via env file:
 
+```bash
+echo 'WASTEMYTIME_PASSWORD=your_password_here' > ~/.wastemytime_env
+chmod 600 ~/.wastemytime_env
+```
+
+then install the service:
+
+```bash
 cp wastemytime.service ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable --now wastemytime
