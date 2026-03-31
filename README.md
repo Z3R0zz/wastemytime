@@ -18,18 +18,6 @@ so instead of reading any of it i wrote a daemon that reads it for me, classifie
 - **scrum.** we had a lecture about stand-ups. i have stood up in like a thousand stand-ups. i have retro'd so hard i could facilitate one in my sleep. but sure let me write a reflection paper about the Agile Manifesto
 - **how to make a pull request.** the professor showed us the green button on GitHub. i mass-produce these daily at work but thanks for the guided tour i guess
 
-## the Myllypuro parking experience
-
-the commute alone is great. wake up on 4 hours of sleep, merge onto Kehä 1 during rush hour with everyone else who's questioning their life choices, just to not find a parking spot when you get there
-
-there is no student parking at Myllypuro campus. there's street parking if you're lucky, like 500m away. the spots have a 4 hour max. the school day is 5-6 hours. so halfway through your lecture about the Agile Manifesto you get to choose between missing the rest of class or paying a parking fine. either way you're hiking half a kilometer each way to find out
-
-staff of course has a heated parking garage inside the campus. heated. inside. meanwhile i'm parallel parking between a snowbank and a bin lorry on some random street in Mellunkylä, sprinting to make it to the lecture, knowing i'll be sprinting back in 3 hours and 45 minutes
-
-so to recap: i risk my life on Kehä 1 on no sleep, can't park when i get there, get fined if i stay too long, and then sit down to learn what a pull request is. great system
-
-anyway this tool automates away the one part of university that's even more tedious than the coursework itself: reading the emails about it
-
 ## setup
 
 ### 1. pull the AI model
