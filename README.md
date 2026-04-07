@@ -8,14 +8,14 @@ because after 4 years of professional software engineering i still need a univer
 
 Metropolia sends a lot of emails. most of them are noise. career fairs for people who don't have careers yet, internship offers for people who already have jobs, newsletters that could've just been `/dev/null`
 
-the ones that actually matter - exam dates, deadlines, thesis stuff, "your tuition is overdue" are buried under 47 emails about a hackathon sponsored by some consulting firm you've never heard of, or fuck if i know if they send hackathon emails. i don't read them anyways.
+the ones that actually matter, exam dates, deadlines, thesis stuff are buried under 47 emails about a hackathon sponsored by some consulting firm you've never heard of, or fuck if i know if they send hackathon emails. i don't read them anyways.
 
 so instead of reading any of it i wrote a daemon that reads it for me, classifies it with a local LLM, and pings me only when something actually matters. the rest goes where it belongs
 
 ## things my university has taught me that i already knew
 
 - **git branching.** in year two. i've been making PRs professionally since before some of my classmates had GitHub accounts. the course dedicated an entire week to `git merge`. a week
-- **scrum.** we had a lecture about stand-ups. i have stood up in like a thousand stand-ups. i have retro'd so hard i could facilitate one in my sleep. but sure let me write a reflection paper about the Agile Manifesto
+- **scrum.** we had a lecture about stand-ups. i have stood up in like a thousand stand-ups. but sure let me write a reflection paper about the Agile Manifesto
 - **how to make a pull request.** the professor showed us the green button on GitHub. i mass-produce these daily at work but thanks for the guided tour i guess
 
 ## setup
